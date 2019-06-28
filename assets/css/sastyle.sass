@@ -1,0 +1,216 @@
+$blue: #447b7b
+$redish: #D18F7E
+
+%button     
+    height: 37px
+    font-size: 20px
+    border-radius: 50%
+    border: white 1px solid
+    color: white
+    background-color: gray
+
+%buttonh
+    color: white
+    border: white 1px solid
+    background-color: $redish
+    
+body
+    background-image: url("../portimg.jpg")
+
+header
+    width: 960px
+    margin: 0 auto
+    height: 90px
+    background: $blue
+    position: relative
+
+#name
+    position: absolute
+    bottom: 20px
+    width: 480px
+    font-size: 35px
+    margin: .7%
+    color: white
+    float: left
+    font-weight: bold
+
+#links
+    float: left
+    width: 480px
+    bottom: 20px
+    right: 0
+    position: absolute
+    padding: 5px
+
+.button
+    float: right
+    margin-left: 30px
+    @extend %button
+
+.button:hover
+    @extend %buttonh
+
+section
+    margin-top: 60px !important
+    border: $blue 2.5px solid
+    width: 955px
+    margin: 0 auto
+    background-color: white
+    height: 375px
+    border-radius: 10%
+
+#pagetitle
+    margin-left: 5%
+    margin-top: 2%
+    font-size: 37px
+    color: $blue
+    font-weight: bold
+
+#undertitle
+    border: $blue 1px solid
+
+// index page info here #447b7b #6CB7B6
+
+img
+    width: 260px
+    margin-left: 10px
+    border-radius: 25%
+    float: left
+
+#index
+    float: left
+    width: 600px
+    font-size: 21px
+    margin-left: 30px
+    margin-top: 10px
+    color: $blue
+
+// index ends here
+// contact starts here
+
+#personname
+    margin-left: 10px
+
+#personemail, #personmsg
+    margin-left: 10px
+    margin-top: 15px
+
+h3
+    color: $blue
+    font-weight: bold
+    font-size: 20px
+
+input
+    font-size: 16px
+    width: 90%
+    margin-top: 5px
+    padding-left: 5px
+
+textarea
+    width: 90%
+    height: 45px
+    font-size: 16px
+    padding-left: 5px
+
+#forbutton
+    width: 100%
+    justify-content: center
+    display: flex
+
+#special
+    @extend %button
+    margin-left: 10px
+    margin-top: 10px
+
+#special:hover
+    @extend %buttonh
+
+//contact ends here
+
+footer
+    width: 100%
+    position: absolute
+    bottom: 0
+
+#bottom
+    text-align: center
+    color: white
+    padding-left: 10px
+    padding-bottom: 10px
+
+@media screen and ( max-width: 960px )
+
+    header
+        width: 100%
+
+    section
+        width: 99%
+
+    #name, #links
+        width: 50%
+
+    img
+        margin-right: 10px
+    
+    #index
+        float: none
+        width: 90%
+        margin-right: 30px 
+
+@media screen and ( max-width: 825px )
+    img
+        float: none
+
+    #imgdiv
+        justify-content: center
+        display: flex
+    
+    section 
+        height: 500px
+
+@media screen and ( max-width: 675px )
+
+    #name, #links
+        float: none
+        bottom: auto
+        right: auto
+        position: relative
+        margin: 0
+
+    #name
+        width: 99%
+
+    #links
+        width: 96%
+        justify-content: center
+        flex-direction: row-reverse
+        display: flex
+
+    .button
+        float: none
+
+    header
+        height: 115px
+        text-align: center
+
+    h1
+        width: 100%
+        text-align: center
+        padding-top: 10px
+        padding-bottom: 10px
+
+@media screen and ( max-width: 460px )
+    section
+        width: 98%
+
+    #pagetitle
+        text-align: center
+
+@media screen and (max-width: 350px)
+    button
+        font-size: 17px
+
+@media screen and ( max-height: 745px )
+    footer
+        position: relative
+        margin-top: 10px
