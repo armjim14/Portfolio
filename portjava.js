@@ -7,9 +7,9 @@ contact.addEventListener("click", function(){
 })
 
 portfolio.addEventListener("click", function(){
-    window.location.href = 'portfolio.html'
+        window.location.href = 'portfolio.html'
 })
 
 home.addEventListener("click", function(){
-    window.location.href = 'index.html'
+        window.location.href = 'index.html'
 })

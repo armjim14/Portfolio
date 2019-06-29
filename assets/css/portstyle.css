@@ -56,7 +56,8 @@ section {
   width: 955px;
   margin: 0 auto;
   background-color: white;
-  height: 375px;
+  min-height: 375px;
+  overflow: hidden;
   border-radius: 10%;
 }
 
@@ -133,6 +134,7 @@ textarea {
   border: #447b7b 1px solid;
   margin-left: 10px;
   float: left;
+  margin-bottom: 10px;
 }
 
 .card:hover {
@@ -192,6 +194,7 @@ footer {
     float: none;
     width: 90%;
     margin-right: 30px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 825px) {
@@ -202,10 +205,6 @@ footer {
   #imgdiv {
     justify-content: center;
     display: flex;
-  }
-
-  section {
-    height: 500px;
   }
 }
 @media screen and (max-width: 675px) {

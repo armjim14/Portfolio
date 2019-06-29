@@ -56,7 +56,8 @@ section
     width: 955px
     margin: 0 auto
     background-color: white
-    height: 375px
+    min-height: 375px
+    overflow: hidden
     border-radius: 10%
 
 #pagetitle
@@ -133,6 +134,7 @@ textarea
     border: $blue 1px solid
     margin-left: 10px
     float: left
+    margin-bottom: 10px
 
 .card:hover
     box-shadow: 2px 2px 5px
@@ -183,6 +185,7 @@ footer
         float: none
         width: 90%
         margin-right: 30px 
+        margin-bottom: 10px
 
 @media screen and ( max-width: 825px )
     #profile
@@ -192,8 +195,8 @@ footer
         justify-content: center
         display: flex
     
-    section 
-        height: 500px
+    // section 
+    //     height: 500px
 
 @media screen and ( max-width: 675px )
 
@@ -225,6 +228,10 @@ footer
         text-align: center
         padding-top: 10px
         padding-bottom: 10px
+
+// @media screen and ( max-width: 515px )
+//     section
+//         height: 675px
 
 @media screen and ( max-width: 460px )
     section
