@@ -69,8 +69,16 @@ section {
   font-weight: bold;
 }
 
-#undertitle {
+#pagetitle2 {
+  margin-left: 5%;
+  margin-top: 2%;
+  color: #447b7b;
+  font-weight: bold;
+}
+
+.undertitle {
   border: #447b7b 1px solid;
+  clear: both;
 }
 
 #profile {
@@ -153,6 +161,10 @@ textarea {
   width: 100%;
 }
 
+#personname {
+  clear: both;
+}
+
 .cont {
   text-align: center;
   background-color: #447b7b;
@@ -163,6 +175,19 @@ textarea {
 
 a {
   text-decoration: none;
+}
+
+#title {
+  float: left;
+  font-size: 37px;
+  width: 49%;
+}
+
+#phone {
+  float: left;
+  width: 49%;
+  font-size: 20px !important;
+  text-align: right;
 }
 
 footer {
