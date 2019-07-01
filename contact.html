@@ -22,31 +22,37 @@
 </header>
 
 <section id="changejs">
-    <div id="pagetitle">
-        <h2> Contact </h2>
-    </div>
-    <hr id="undertitle">
-    <div id="personname">
-        <h3>Please Enter Your Full Name:</h3>
-        <input type="text" id="fullname" placeholder="Name">
-    </div>
-    <div id="personemail">
-        <h3>Your Email:</h3>
-        <input type="email" id="fullemail" placeholder="Email">
-    </div>
-    <div id="personmsg">
-        <h3>A Message:</h3>
-        <textarea type="text" id="fullmsg" placeholder="Message"></textarea>
-    </div>
-    <div id="forbutton">
-        <button id="special">Submit</button>
-    </div>
+    <form>
+        <div id="pagetitle">
+            <h2> Contact </h2>
+        </div>
+        <hr id="undertitle">
+        <div id="personname">
+            <h3>Please Enter Your Full Name:</h3>
+            <input name="name" type="text" id="fullname" placeholder="Name">
+        </div>
+        <div id="personemail">
+            <h3>Your Email:</h3>
+            <input name="_replyto" type="email" id="fullemail" placeholder="Email">
+        </div>
+        <div id="personmsg">
+            <h3>A Message:</h3>
+            <textarea type="text" id="fullmsg" placeholder="Message"></textarea>
+        </div>
+        <div id="forbutton">
+            <h6 id="foremail"></h6>
+            <button type="submit" id="special">Submit</button>
+        </div>
+    </form>
 </section>
 
 <footer>
     <p id="bottom">Copyright ©</p>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
 <script src="portjava.js"></script>
 </body>
 </html>
