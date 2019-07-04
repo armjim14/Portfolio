@@ -112,6 +112,10 @@ section {
   display: none;
 }
 
+.res {
+  width: 100%;
+}
+
 #personname {
   margin-left: 10px;
 }
