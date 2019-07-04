@@ -51,6 +51,7 @@ header {
 }
 
 section {
+  position: relative;
   margin-top: 60px !important;
   border: #447b7b 2.5px solid;
   width: 955px;
@@ -95,6 +96,20 @@ section {
   margin-left: 30px;
   margin-top: 10px;
   color: #447b7b;
+}
+
+#resume {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+
+#all {
+  display: block;
+}
+
+#dif {
+  display: none;
 }
 
 #personname {

@@ -1,6 +1,9 @@
+var all = document.getElementById("all");
+var dif = document.getElementById("dif");
 var contact = document.getElementById("contact");
 var portfolio = document.getElementById("portfolio");
 var home = document.getElementById("home");
+var resume = document.getElementById("resume");
 
 contact.addEventListener("click", function(){
     window.location.href = 'contact.html'
@@ -12,6 +15,11 @@ portfolio.addEventListener("click", function(){
 
 home.addEventListener("click", function(){
         window.location.href = 'index.html'
+})
+
+resume.addEventListener("click", function(){
+        all.style.display = "none"
+        dif.style.display = "block"
 })
 
 var getInfo = document.getElementById("special");
