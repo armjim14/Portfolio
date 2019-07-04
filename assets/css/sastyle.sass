@@ -95,9 +95,13 @@ section
     color: $blue
 
 #resume
+    @extend %button
     position: absolute
     bottom: 10px
     left: 45%
+
+#resume:hover
+    @extend %buttonh
 
 #all
     display: block
@@ -269,9 +273,6 @@ footer
         padding-top: 10px
         padding-bottom: 10px
 
-// @media screen and ( max-width: 515px )
-//     section
-//         height: 675px
 
 @media screen and ( max-width: 460px )
     section

@@ -1,4 +1,4 @@
-#special, .button {
+#special, #resume, .button {
   height: 37px;
   font-size: 20px;
   border-radius: 50%;
@@ -7,7 +7,7 @@
   background-color: gray;
 }
 
-#special:hover, .button:hover {
+#special:hover, #resume:hover, .button:hover {
   color: white;
   border: white 1px solid;
   background-color: #D18F7E;
