@@ -4,7 +4,7 @@ $redish: #D18F7E
 %button     
     height: 37px
     font-size: 20px
-    border-radius: 50%
+    border-radius: 40%
     border: white 1px solid
     color: white
     background-color: gray
@@ -98,16 +98,19 @@ section
     @extend %button
     position: absolute
     bottom: 10px
-    left: 40%
-    right: 40%
     text-align: center
-    padding-top: 9px
+    padding: 7px 10px 0px 10px 
 
 #resume:hover
     @extend %buttonh
 
-.res
+// .res
+//     width: 100%
+
+#down
     width: 100%
+    justify-content: center
+    display: flex
 
 // index ends here
 // contact starts here
@@ -226,7 +229,7 @@ footer
         float: none
         width: 90%
         margin-right: 30px 
-        margin-bottom: 10px
+        margin-bottom: 70px
 
 @media screen and ( max-width: 825px )
     #profile
