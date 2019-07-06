@@ -101,15 +101,10 @@ section {
 #resume {
   position: absolute;
   bottom: 10px;
-  left: 45%;
-}
-
-#all {
-  display: block;
-}
-
-#dif {
-  display: none;
+  left: 40%;
+  right: 40%;
+  text-align: center;
+  padding-top: 9px;
 }
 
 .res {
