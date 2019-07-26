@@ -22,7 +22,7 @@
 </header>
 
 <section id="changejs">
-    <form>
+    <form action="mail.php" method="POST">
         <div id="pagetitle2">
             <h2 id="title"> Contact </h2>
             <h2 id="phone">My Number: (520)313-4522 </h2>
@@ -30,15 +30,15 @@
         <hr class="undertitle">
         <div id="personname">
             <h3>Please Enter Your Full Name:</h3>
-            <input name="name" type="text" id="fullname" placeholder="Name">
+            <input name="subject" type="text" id="fullname" placeholder="Name">
         </div>
         <div id="personemail">
             <h3>Your Email:</h3>
-            <input name="_replyto" type="email" id="fullemail" placeholder="Email">
+            <input name="email" type="email" id="fullemail" placeholder="Email">
         </div>
         <div id="personmsg">
             <h3>A Message:</h3>
-            <textarea type="text" id="fullmsg" placeholder="Message"></textarea>
+            <textarea name="message" type="text" id="fullmsg" placeholder="Message"></textarea>
         </div>
         <div id="forbutton">
             <h6 id="foremail"></h6>
