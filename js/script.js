@@ -260,10 +260,10 @@ function parallax() {
 
 });
 
+$("#forGithub").on("click", () => {
+   window.open("https://github.com/armjim14");
+})
 
-
-
-
-
-
-
+$("#forlinkedin").on("click", () => {
+   window.open("https://www.linkedin.com/in/armando-jimenez-291a4b180");
+})

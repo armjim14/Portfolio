@@ -15,6 +15,10 @@
 
 body { background: #0f0f0f; }
 
+#forGithub, #forlinkedin {
+  cursor: pointer
+}
+
 .section-title {
   border: 2px solid;
   font-family: "Open Sans",sans-serif;
