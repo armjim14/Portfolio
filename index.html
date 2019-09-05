@@ -550,7 +550,7 @@
             <div class="form-container wow fadeIn">
                <!-- form -->
 
-               <form method="post" id="contactForm" name="contactForm">
+               <!-- <form method="post" id="contactForm" name="contactForm"> -->
                   <fieldset>
 
                      <div>
@@ -574,14 +574,14 @@
                      <div>
                         <!-- contact-warning -->
                         <div id="message-warning"> Error boy</div>
-                        <button class="submit">Submit</button>
+                        <button id="firebaseSend" class="submit">Submit</button>
                         <span id="image-loader">
                            <img alt="" src="images/loader.gif">
                         </span>
                      </div>
 
                   </fieldset>
-               </form> <!-- Form End -->
+               <!-- </form> Form End -->
                <!-- contact-success -->
                <div id="message-success">
                   <i class="fa fa-check"></i>Your message was sent, thank you!<br>
@@ -649,8 +649,9 @@
    <script src="js/magnific-popup.js"></script>
    <script src="js/wow.min.js"></script>
    <script src="js/jquery.nicescroll.min.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
    <script src="js/script.js"></script>
-
 </body>
 
 </html>
