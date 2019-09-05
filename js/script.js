@@ -298,6 +298,8 @@ $("#firebaseSend").on("click", () => {
       msg: msg.value
    })
 
+   $("#message-success").css("display", "block")
+
    name.value = "";
    email.value = "";
    subj.value = "";
