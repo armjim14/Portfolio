@@ -16,7 +16,12 @@
 body { background: #0f0f0f; }
 
 #forGithub, #forlinkedin {
-  cursor: pointer
+  cursor: pointer;
+  color: #e8d4ba;
+}
+
+#forGithub:hover, #forlinkedin:hover {
+  color: steelblue;
 }
 
 .section-title {
