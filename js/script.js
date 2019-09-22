@@ -306,3 +306,7 @@ $("#firebaseSend").on("click", () => {
    msg.value = "";
 
 })
+
+$("#freeLWork").click(() => {
+   window.open("http://www.elcoronadotucson.com/");
+})
