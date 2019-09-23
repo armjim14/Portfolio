@@ -220,44 +220,44 @@ jQuery(document).ready(function ($) {
    /*	contact form
    ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function () {
+   // $('form#contactForm button.submit').click(function () {
 
-      $('#image-loader').fadeIn();
+   //    $('#image-loader').fadeIn();
 
-      var contactName = $('#contactForm #contactName').val();
-      var contactEmail = $('#contactForm #contactEmail').val();
-      var contactSubject = $('#contactForm #contactSubject').val();
-      var contactMessage = $('#contactForm #contactMessage').val();
+   //    var contactName = $('#contactForm #contactName').val();
+   //    var contactEmail = $('#contactForm #contactEmail').val();
+   //    var contactSubject = $('#contactForm #contactSubject').val();
+   //    var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-         '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+   //    var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
+   //       '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
-      $.ajax({
+   //    $.ajax({
 
-         type: "POST",
-         url: "inc/sendEmail.php",
-         data: data,
-         success: function (msg) {
+   //       type: "POST",
+   //       url: "inc/sendEmail.php",
+   //       data: data,
+   //       success: function (msg) {
 
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();
-            }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-               $('#message-warning').fadeIn();
-            }
+   //          // Message was sent
+   //          if (msg == 'OK') {
+   //             $('#image-loader').fadeOut();
+   //             $('#message-warning').hide();
+   //             $('#contactForm').fadeOut();
+   //             $('#message-success').fadeIn();
+   //          }
+   //          // There was an error
+   //          else {
+   //             $('#image-loader').fadeOut();
+   //             $('#message-warning').html(msg);
+   //             $('#message-warning').fadeIn();
+   //          }
 
-         }
+   //       }
 
-      });
-      return false;
-   });
+   //    });
+   //    return false;
+   // });
 
 
 });
@@ -277,28 +277,17 @@ $("#firebaseSend").on("click", () => {
    let subj = document.getElementById("contactSubject");
    let msg = document.getElementById("contactMessage");
 
-   var firebaseConfig = {
-      apiKey: "AIzaSyAAjTkTaaAYcp4y6U4karifugJsRENeiM4",
-      authDomain: "game1-e50a2.firebaseapp.com",
-      databaseURL: "https://game1-e50a2.firebaseio.com",
-      projectId: "game1-e50a2",
-      storageBucket: "game1-e50a2.appspot.com",
-      messagingSenderId: "400261651315",
-      appId: "1:400261651315:web:64034034e67c5cc5"
-   };
+   $("#message-success").css("display", "block")
 
-   firebase.initializeApp(firebaseConfig)
-
-   var database = firebase.database();
-
-   database.ref().push({
+   let send = {
       name: name.value,
       email: email.value,
       subj: subj.value,
       msg: msg.value
-   })
+   }
 
-   $("#message-success").css("display", "block")
+   $.post("send/email", send)
+      .then(res => console.log(res))
 
    name.value = "";
    email.value = "";
